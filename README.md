@@ -1,8 +1,10 @@
-# QIE-Bbox-Studio
+# **QIE-Bbox-Studio**
 
 QIE-Bbox-Studio (Qwen Image Edit Bounding Box Studio) is an advanced AI-powered image editing interface built on top of the Qwen2.5-VL and Qwen-Image-Edit models. This application allows users to manipulate images with extreme precision by defining bounding boxes and providing natural language prompts. 
 
 By leveraging the capabilities of `Qwen/Qwen-Image-Edit-2511` and specialized adapter models, QIE-Bbox-Studio seamlessly executes targeted editing tasks like object removal, design addition, and object moving.
+
+<img width="1876" height="2329" alt="Screenshot 2026-03-17 at 18-47-09 QIE Bbox Studio - a Hugging Face Space by prithivMLmods" src="https://github.com/user-attachments/assets/ef497f6b-9e9b-4347-aec6-7ee46b408577" />
 
 ## Key Features
 
